@@ -13,6 +13,8 @@ RUN conda install --yes \
     nomkl \
     numpy==1.14.2 \
     pandas==0.22.0 \
+    taxcalc==0.19.0 \
+    -c ospc \
     && conda clean -tipsy
 
 COPY prepare.sh /usr/bin/prepare.sh
